@@ -1,7 +1,57 @@
-*{
-    font-family: Arial, Helvetica, sans-serif;
+@import "tailwindcss";
+
+:root {
+    --main-bg-color : #0a4647;
+    --azul-strong : #0798E0;
+    --azul-medium : #07DDE0;
+    --green-strong : #53f053;
+    --green-medium : #07E051;
+    --green-light : #79f193;
+
 }
 
-.main {
-    background-color: aqua;
+body {
+    background-color: var(--main-bg-color);
+}
+
+.Header {
+    background: linear-gradient(var(--color-green-500), var(--color-green-400));
+    padding: 10px;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 70px;
+    box-shadow: rgba(0, 0, 0, 0.562) 0px 5px 10px;
+
+}
+
+button {
+    cursor: pointer;
+}
+
+.logo {
+    height: fit-content;
+    width: fit-content;
+    border-radius: 50%;
+    
+}
+
+.Header>button>img {
+    height: 3em;
+    border-radius: 50%;
+}
+
+.button-logo{
+    font-size: 2em;
+}
+
+.button-menu{
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    box-shadow: rgba(0, 0, 0, 0.459) 5px 5px 10px;
+    text-shadow: black 1px 1px 3px;
+    color: white;
 }

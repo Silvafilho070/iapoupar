@@ -1,6 +1,6 @@
 function Navigation () {
     return (
-        <h1>Navegação</h1>
+        <div></div>
     )
 }
 
